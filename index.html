@@ -24,13 +24,50 @@
             <h2>My Work</h2>
         </section>
 
+        <form id="formation" name="my-form" action="#" method="get" onsubmit="myFunc()">
+            <h2>Join my Email List</h2>
+            <legend>Your Face</legend>
+            <label for="avatar">Upload Image:</label>
+           <input type="file" id="avatar" name="avatar">
+            <p>Image Preview:</p>
+            <img id="preview" width="500">
 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="myname" required  min="3" max="20">
+            >
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <label for="password">Create a Password:</label>
+            <input type="password" id="password" name="password" required aria-required="true" placeholder="Must contain 1 num 1 symbol">
+            
+            <div class="radio">
+                <h4>Best Time to Contact...</h4>
+                <label for="morning">Morning</label>
+                <input type="radio" id="morning" value="morning">
+
+                <label for="afternoon">Afternoon</label>
+                <input type="radio" id="afternoon" value="afternoon">
+
+                <label for="evening">Evening</label>
+                <input type="radio" id="evening" value="evening">
+
+            </div>
+            <label for="request">Enter Special Request</label>
+            <textarea id="request"></textarea>
+            <input type="submit" id="submit" value="submit">
+        </form>
 
     </main>
 
     <footer>
 
     </footer>
+    <script src="https://url.nucamp.co/datingjs"></script>
     <script src="assets/app.js"></script>
 </body>
 </html>

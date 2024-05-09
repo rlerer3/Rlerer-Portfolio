@@ -1,4 +1,5 @@
-    var x = new Date();
-    var x1 = x.toLocaleString();
-    document.getElementById("time").innerHTML = x1;
-
+function myFunc() {
+    let me= document.getElementById("name").value;
+    alert("Ready to Submit" + " " + me+"?");
+    document.body.style.backgroundColor = "yellow";
+}
